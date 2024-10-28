@@ -11,12 +11,20 @@
       "RelativeMoniker": "D:0:0:{3476C526-E926-4CCA-B522-3267EA961B89}|CourierApp.csproj|solutionrelative:orders.csv||{8B382828-6202-11D1-8870-0000F87579D2}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{3476C526-E926-4CCA-B522-3267EA961B89}|CourierApp.csproj|D:\\Work projects\\TechQuest\\1\\CourierApp\\CourierApp\\order.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3476C526-E926-4CCA-B522-3267EA961B89}|CourierApp.csproj|solutionrelative:order.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{3476C526-E926-4CCA-B522-3267EA961B89}|CourierApp.csproj|D:\\Work projects\\TechQuest\\1\\CourierApp\\CourierApp\\readme.md||{EFC0BB08-EA7D-40C6-A696-C870411A895B}",
       "RelativeMoniker": "D:0:0:{3476C526-E926-4CCA-B522-3267EA961B89}|CourierApp.csproj|solutionrelative:readme.md||{EFC0BB08-EA7D-40C6-A696-C870411A895B}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\Work projects\\TechQuest\\1\\CourierApp\\CourierApp\\bin\\Debug\\orders.csv||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:bin\\Debug\\orders.csv||{8B382828-6202-11D1-8870-0000F87579D2}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\Work projects\\TechQuest\\1\\CourierApp\\CourierApp\\bin\\Debug\\application.log||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:bin\\Debug\\application.log||{8B382828-6202-11D1-8870-0000F87579D2}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3476C526-E926-4CCA-B522-3267EA961B89}|CourierApp.csproj|D:\\Work projects\\TechQuest\\1\\CourierApp\\CourierApp\\order.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3476C526-E926-4CCA-B522-3267EA961B89}|CourierApp.csproj|solutionrelative:order.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -26,8 +34,35 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 5,
+          "SelectedChildIndex": 7,
           "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Order.cs",
+              "DocumentMoniker": "D:\\Work projects\\TechQuest\\1\\CourierApp\\CourierApp\\Order.cs",
+              "RelativeDocumentMoniker": "Order.cs",
+              "ToolTip": "D:\\Work projects\\TechQuest\\1\\CourierApp\\CourierApp\\Order.cs",
+              "RelativeToolTip": "Order.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAAAaAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-27T11:45:45.286Z",
+              "IsPinned": true,
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "application.log",
+              "DocumentMoniker": "D:\\Work projects\\TechQuest\\1\\CourierApp\\CourierApp\\bin\\Debug\\application.log",
+              "RelativeDocumentMoniker": "bin\\Debug\\application.log",
+              "ToolTip": "D:\\Work projects\\TechQuest\\1\\CourierApp\\CourierApp\\bin\\Debug\\application.log",
+              "RelativeToolTip": "bin\\Debug\\application.log",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAMAAAAAAAAA",
+              "Icon": "00000000-0000-0000-0000-000000000000.000000|iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAF8SURBVDhPjVNLTgJBEG1lwpoFB3GNK9fieA48hD8iwT/ihwgSDAIHgAGXXsEV18CNzL/LquqZdsYM6kteXqcy3fWqpmpNRBgOhyABBEgpAFVKPIMUcYzUyOU\u002BXM/b2qtU3vkSfRjjZTCAMAw1A2LwzdFoBPP5HNqdzuL27n4juibWI\u002BUshBA1DIkhEx9iEorFotgslQqGYbxxAGFEqt1MxmPWJLbLZdZ\u002Bv89q5PMFPiTR6z2zdaxR0fXA0XTBcVywkb4fwHXjRteecIDNQ7UmExVYAdPcxYaqclN46na5WenMKjtlVnTYwcXlVYaDqImW9beD5N/TeGy32QHXm6hZ03ZgiSQHp2fnWQ4oBmJqWSqwAqZpZjt4aLXAD4J0VqyZsmoubfB8H2r1eoaD6NXZ9HcHO\u002BSA3f4AjifXl8rItOETM8ckB9WTWpYD9RdeZ1PWVWAHWXPQaDb59f/w8LiqHeh1pvGkCaP6qB8yXusoxmuNZ7XmII4O9vGuEF86osuDYRkpYQAAAABJRU5ErkJggg==",
+              "WhenOpened": "2024-10-28T11:08:37.784Z",
+              "EditorCaption": ""
+            },
             {
               "$type": "Bookmark",
               "Name": "ST:128:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
@@ -39,14 +74,28 @@
             {
               "$type": "Document",
               "DocumentIndex": 3,
+              "Title": "orders.csv",
+              "DocumentMoniker": "D:\\Work projects\\TechQuest\\1\\CourierApp\\CourierApp\\bin\\Debug\\orders.csv",
+              "RelativeDocumentMoniker": "bin\\Debug\\orders.csv",
+              "ToolTip": "D:\\Work projects\\TechQuest\\1\\CourierApp\\CourierApp\\bin\\Debug\\orders.csv",
+              "RelativeToolTip": "bin\\Debug\\orders.csv",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAiwBUAAAAgAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.002120|",
+              "WhenOpened": "2024-10-28T11:06:43.417Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
               "Title": "Readme.md",
               "DocumentMoniker": "D:\\Work projects\\TechQuest\\1\\CourierApp\\CourierApp\\Readme.md",
               "RelativeDocumentMoniker": "Readme.md",
               "ToolTip": "D:\\Work projects\\TechQuest\\1\\CourierApp\\CourierApp\\Readme.md",
               "RelativeToolTip": "Readme.md",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAADkAAAAAAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAB8AAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001818|",
-              "WhenOpened": "2024-10-27T11:47:43.607Z"
+              "WhenOpened": "2024-10-27T11:47:43.607Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -58,19 +107,8 @@
               "RelativeToolTip": "orders.csv",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.002120|",
-              "WhenOpened": "2024-10-27T11:47:23.077Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "Order.cs",
-              "DocumentMoniker": "D:\\Work projects\\TechQuest\\1\\CourierApp\\CourierApp\\Order.cs",
-              "RelativeDocumentMoniker": "Order.cs",
-              "ToolTip": "D:\\Work projects\\TechQuest\\1\\CourierApp\\CourierApp\\Order.cs",
-              "RelativeToolTip": "Order.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA0AAAAIAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-27T11:45:45.286Z"
+              "WhenOpened": "2024-10-27T11:47:23.077Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -80,7 +118,7 @@
               "RelativeDocumentMoniker": "Program.cs",
               "ToolTip": "D:\\Work projects\\TechQuest\\1\\CourierApp\\CourierApp\\Program.cs",
               "RelativeToolTip": "Program.cs",
-              "ViewState": "AQIAACUAAAAAAAAAAAAgwDYAAAAJAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAABZAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-10-27T11:45:02.442Z",
               "EditorCaption": ""

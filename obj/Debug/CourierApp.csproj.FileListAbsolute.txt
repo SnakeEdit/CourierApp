@@ -5,3 +5,10 @@ D:\Work projects\TechQuest\1\CourierApp\obj\Debug\CourierApp.csproj.AssemblyRefe
 D:\Work projects\TechQuest\1\CourierApp\obj\Debug\CourierApp.csproj.CoreCompileInputs.cache
 D:\Work projects\TechQuest\1\CourierApp\obj\Debug\CourierApp.exe
 D:\Work projects\TechQuest\1\CourierApp\obj\Debug\CourierApp.pdb
+D:\Work projects\TechQuest\1\CourierApp\CourierApp\bin\Debug\CourierApp.exe.config
+D:\Work projects\TechQuest\1\CourierApp\CourierApp\bin\Debug\CourierApp.exe
+D:\Work projects\TechQuest\1\CourierApp\CourierApp\bin\Debug\CourierApp.pdb
+D:\Work projects\TechQuest\1\CourierApp\CourierApp\obj\Debug\CourierApp.csproj.AssemblyReference.cache
+D:\Work projects\TechQuest\1\CourierApp\CourierApp\obj\Debug\CourierApp.csproj.CoreCompileInputs.cache
+D:\Work projects\TechQuest\1\CourierApp\CourierApp\obj\Debug\CourierApp.exe
+D:\Work projects\TechQuest\1\CourierApp\CourierApp\obj\Debug\CourierApp.pdb

@@ -10,102 +10,110 @@ namespace CourierApp
     {
         static void Main(string[] args)
         {
-            string filePath = "orders.csv"; //Указатель на файл содержащий список заказов (внутри bin/debug)
-            List<Order> orders = ReadOrders(filePath); //Список заказов
+            //В рамках проекта все файлы продублированы и изменяются внутри .../bin/Debug
+            string inputFilePath = "orders.csv"; // Путь к файлу с заказами
+            string outputFilePath = "filtered_orders.csv"; // Путь к файлу с результатами
+            string logFilePath = "application.log"; // Путь к файлу с логами
 
-            string command = "";
+            // Запрос ввода от пользователя
+            Console.Write("Введите название района доставки: ");
+            string cityDistrict = Console.ReadLine();
 
-            Console.WriteLine("Для завершения работы - введите quit; Для поиска заказа - введите order");
-
-            while (!command.ToLower().Contains("quit"))
+            Console.Write("Введите время первой доставки (yyyy-MM-dd HH:mm:ss): ");
+            DateTime firstDeliveryDateTime;
+            while (!DateTime.TryParse(Console.ReadLine(), out firstDeliveryDateTime))
             {
-                Console.Write("> ");
-                command = Console.ReadLine();
-
-                if (command.ToLower() == "order")
-                {
-                    Console.WriteLine("Введите район для фильтрации:");
-                    string area = Console.ReadLine();
-
-                    Console.WriteLine("Введите начальную дату периода для заказов (yyyy-MM-dd HH:mm:ss):");
-                    DateTime startTime = DateTime.Parse(Console.ReadLine());
-
-                    Console.WriteLine("Введите конечную дату периода заказов (yyyy-MM-dd HH:mm:ss):");
-                    DateTime endTime = DateTime.Parse(Console.ReadLine());
-
-                    Console.WriteLine("Введите минимальное количество заказов:");
-                    int minOrderCount = int.Parse(Console.ReadLine());
-
-                    var filteredOrders = FilterOrders(orders, area, startTime, endTime, minOrderCount);
-
-                    if (filteredOrders.Count > 0)
-                    {
-                        Console.WriteLine("Отфильтрованные заказы:");
-                        foreach (var order in filteredOrders)
-                        {
-                            Console.WriteLine($"Номер заказа: {order.OrderId}, Вес: {order.Weight}, Район: {order.Area}, Время доставки: {order.DeliveryTime}");
-                        }
-                    }
-                    else
-                    {
-                        Console.WriteLine("Нет заказов удовлетворяющих запрос");
-                    }
-                }
+                Console.Write("Неверный формат времени. Пожалуйста, введите время в формате yyyy-MM-dd HH:mm:ss: ");
             }
+            LogMessage("Application started", logFilePath);
+
+            // Чтение данных из файла
+            var orders = ReadOrders(inputFilePath);
+            if (orders.Count == 0)
+            {
+                LogError("No orders found.");
+                return;
+            }
+
+            // Фильтрация заказов
+            var filteredOrders = FilterOrders(orders, cityDistrict, firstDeliveryDateTime);
+            LogMessage($"Filtered {filteredOrders.Count} orders", logFilePath);
+
+            // Запись результатов
+            WriteFilteredOrdersToFile(filteredOrders, outputFilePath);
+            LogMessage("Application finished successfully", logFilePath);
         }
 
         //Метод чтения заказов из файла orders.csv
-        static List<Order> ReadOrders(string filePath) 
+        public static List<Order> ReadOrders(string filePath)
         {
             var orders = new List<Order>();
-
             try
             {
                 var lines = File.ReadAllLines(filePath);
-
                 foreach (var line in lines)
                 {
                     var parts = line.Split(',');
+                    if (parts.Length != 4) continue;
 
-                    // Пропускаем строку заголовка или некорректные строки
-                    if (parts[0] == "OrderId" || parts.Length < 4)
-                        continue;
-
-                    try
+                    var order = new Order
                     {
-                        orders.Add(new Order
-                        {
-                            OrderId = parts[0],
-                            Weight = parts[1],
-                            Area = parts[2],
-                            DeliveryTime = DateTime.ParseExact(parts[3], "yyyy-MM-dd HH:mm:ss", CultureInfo.InvariantCulture)
-                        }) ;
-                    }
-                    catch (FormatException fe)
-                    {
-                        Console.WriteLine($"Ошибка формата в строке: {line}. {fe.Message}");
-                    }
+                        OrderId = parts[0].Trim(),
+                        Weight = parts[1].Trim(),
+                        Area = parts[2].Trim(),
+                        DeliveryTime = DateTime.Parse(parts[3].Trim())
+                    };
+                    orders.Add(order);
                 }
             }
             catch (Exception ex)
             {
-                Console.WriteLine($"Ошибка при чтении файла: {ex.Message}");
+                LogError("Error reading orders from file: " + ex.Message);
             }
             return orders;
         }
         //Метод фильтрации поиска заказов
-        static List<Order> FilterOrders(List<Order> orders, string area, DateTime startTime, DateTime endTime, int minOrderCount)
+        public static List<Order> FilterOrders(List<Order> orders, string cityDistrict, DateTime firstDeliveryDateTime)
         {
-            var filteredOrders = orders
-                .Where(o => o.Area == area && o.DeliveryTime >= startTime && o.DeliveryTime <= endTime)
+            return orders
+                .Where(o => o.Area.Equals(cityDistrict, StringComparison.OrdinalIgnoreCase))
+                .Where(o => o.DeliveryTime >= firstDeliveryDateTime && o.DeliveryTime <= firstDeliveryDateTime.AddMinutes(30))
                 .ToList();
+        }
 
-            if (filteredOrders.Count >= minOrderCount)
+        //Метод записи в файл отфильтрованных заказов
+        public static void WriteFilteredOrdersToFile(List<Order> orders, string outputFilePath)
+        {
+            try
             {
-                return filteredOrders;
+                var writer = new StreamWriter(outputFilePath);
+                foreach (var order in orders)
+                {
+                    writer.WriteLine($"{order.OrderId},{order.Weight},{order.Area},{order.DeliveryTime:yyyy-MM-dd HH:mm:ss}");
+                }
             }
-            // Возвращаем пустой список, если не выполняется условие по количеству заказов
-            return new List<Order>();
+            catch (Exception ex)
+            {
+                LogError("Error writing filtered orders to file: " + ex.Message);
+            }
+        }
+
+        //Метод для логгирования
+        public static void LogMessage(string message, string logFilePath)
+        {
+            try
+            {
+                File.AppendAllText(logFilePath, $"{DateTime.Now:yyyy-MM-dd HH:mm:ss} - {message}{Environment.NewLine}");
+            }
+            catch (Exception)
+            {
+                Console.WriteLine(message);
+            }
+        }
+
+        public static void LogError(string error)
+        {
+            Console.WriteLine($"Error: {error}");
         }
     }
 }
