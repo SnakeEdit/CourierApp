@@ -1,0 +1,93 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\Work projects\\TechQuest\\1\\CourierApp\\CourierApp\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{3476C526-E926-4CCA-B522-3267EA961B89}|CourierApp.csproj|d:\\work projects\\techquest\\1\\courierapp\\courierapp\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3476C526-E926-4CCA-B522-3267EA961B89}|CourierApp.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3476C526-E926-4CCA-B522-3267EA961B89}|CourierApp.csproj|D:\\Work projects\\TechQuest\\1\\CourierApp\\CourierApp\\orders.csv||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{3476C526-E926-4CCA-B522-3267EA961B89}|CourierApp.csproj|solutionrelative:orders.csv||{8B382828-6202-11D1-8870-0000F87579D2}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3476C526-E926-4CCA-B522-3267EA961B89}|CourierApp.csproj|D:\\Work projects\\TechQuest\\1\\CourierApp\\CourierApp\\order.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3476C526-E926-4CCA-B522-3267EA961B89}|CourierApp.csproj|solutionrelative:order.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3476C526-E926-4CCA-B522-3267EA961B89}|CourierApp.csproj|D:\\Work projects\\TechQuest\\1\\CourierApp\\CourierApp\\readme.md||{EFC0BB08-EA7D-40C6-A696-C870411A895B}",
+      "RelativeMoniker": "D:0:0:{3476C526-E926-4CCA-B522-3267EA961B89}|CourierApp.csproj|solutionrelative:readme.md||{EFC0BB08-EA7D-40C6-A696-C870411A895B}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 5,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{cce594b6-0c39-4442-ba28-10c64ac7e89f}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Readme.md",
+              "DocumentMoniker": "D:\\Work projects\\TechQuest\\1\\CourierApp\\CourierApp\\Readme.md",
+              "RelativeDocumentMoniker": "Readme.md",
+              "ToolTip": "D:\\Work projects\\TechQuest\\1\\CourierApp\\CourierApp\\Readme.md",
+              "RelativeToolTip": "Readme.md",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAADkAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001818|",
+              "WhenOpened": "2024-10-27T11:47:43.607Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "orders.csv",
+              "DocumentMoniker": "D:\\Work projects\\TechQuest\\1\\CourierApp\\CourierApp\\orders.csv",
+              "RelativeDocumentMoniker": "orders.csv",
+              "ToolTip": "D:\\Work projects\\TechQuest\\1\\CourierApp\\CourierApp\\orders.csv",
+              "RelativeToolTip": "orders.csv",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.002120|",
+              "WhenOpened": "2024-10-27T11:47:23.077Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Order.cs",
+              "DocumentMoniker": "D:\\Work projects\\TechQuest\\1\\CourierApp\\CourierApp\\Order.cs",
+              "RelativeDocumentMoniker": "Order.cs",
+              "ToolTip": "D:\\Work projects\\TechQuest\\1\\CourierApp\\CourierApp\\Order.cs",
+              "RelativeToolTip": "Order.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA0AAAAIAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-27T11:45:45.286Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Program.cs",
+              "DocumentMoniker": "D:\\Work projects\\TechQuest\\1\\CourierApp\\CourierApp\\Program.cs",
+              "RelativeDocumentMoniker": "Program.cs",
+              "ToolTip": "D:\\Work projects\\TechQuest\\1\\CourierApp\\CourierApp\\Program.cs",
+              "RelativeToolTip": "Program.cs",
+              "ViewState": "AQIAACUAAAAAAAAAAAAgwDYAAAAJAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-27T11:45:02.442Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
